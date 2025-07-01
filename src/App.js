@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import { ToastContainer } from 'react-toastify';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'react-toastify/dist/ReactToastify.css';
+
+import Navbar from './Component/Navbar.js';
+import HomePage from './Component/HomePage.js';
+import App2 from './Component/App2.js'; // Will handle all /otp/* routes
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <ToastContainer position="top-right" autoClose={3000} theme="light" />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Navbar />}>
+            <Route index element={<HomePage />} />
+             
+            <Route path="otp/*" element={<App2 />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
 }
 
