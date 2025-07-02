@@ -6,11 +6,12 @@ function Button()
 {
      var validateotp=()=>{
             
-        toast.success("validating otp");
+        toast("validating otp");
   }
    return(<>
-
+    <div >
    <button className="button" onClick={validateotp}>Submit OTP</button>
+   </div>
      </>
    ) ;
 }
