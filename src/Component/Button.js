@@ -9,7 +9,7 @@ function Button()
         toast("validating otp");
   }
    return(<>
-    <div >
+    <div style={{ textAlign: "center" }}>
    <button className="button" onClick={validateotp}>Submit OTP</button>
    </div>
      </>

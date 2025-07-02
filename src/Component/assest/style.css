@@ -152,6 +152,7 @@
       background-color: #333;
       width: 16%;
       height: 72vh;
+      overflow: hidden;
 
     }
 
@@ -168,7 +169,7 @@
     }
     .button{
       margin:16px;
-      text-align: center;
+      
     }
 
     .homepage-container {
@@ -206,4 +207,14 @@
 
     .homepage-button:hover {
       background-color: #0056b3;
+    }
+    .tabs{
+      border-bottom: 1px solid green;
+      
+    }
+    .tabscontent{
+      height:0px;
+      transition: height 1s;
+      overflow: hidden;
+      
     }
