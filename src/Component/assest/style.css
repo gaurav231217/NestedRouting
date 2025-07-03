@@ -160,16 +160,18 @@
       text-align: center;
       margin: 10px;
       cursor: pointer;
-      
+
 
 
     }
-    .tabrender{
-      width:80%;
+
+    .tabrender {
+      width: 80%;
     }
-    .button{
-      margin:16px;
-      
+
+    .button {
+      margin: 16px;
+
     }
 
     .homepage-container {
@@ -208,13 +210,41 @@
     .homepage-button:hover {
       background-color: #0056b3;
     }
-    .tabs{
+
+    .tabs {
       border-bottom: 1px solid green;
-      
+
     }
-    .tabscontent{
-      height:0px;
+
+    .tabscontent {
+      height: 0px;
       transition: height 1s;
       overflow: hidden;
+
+    }
+
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+      transition: width 2s,padding 2s;
       
     }
+
+    .navbarcontainer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    .menubar {
+      justify-content: end;
+      display: flex;
+    }
+   .page-content{
+    width:85%; 
+   }
+   .navbar{
+    width:9%;
+   }
